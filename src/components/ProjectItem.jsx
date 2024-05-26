@@ -9,7 +9,7 @@ const ProjectItem = ({ img, title, role, link, tech }) => {
           {title}
         </h3>
         <p className='pb-4 pt-2 text-white text-center'>{role}{": "}{tech}</p>
-        <a href={link}>
+        <a href={link} target="_blank">
           <p className='text-center p-3 rounded-lg bg-white text-gray-700 font-bold cursor-pointer text-lg'>
            Visit
           </p>

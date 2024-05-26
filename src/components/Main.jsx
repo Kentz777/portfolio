@@ -1,7 +1,15 @@
 import React from "react";
-import { FaLinkedin, FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
+import {
+  FaLinkedin,
+  FaFacebook,
+  FaInstagram,
+  FaTwitter,
+  FaGithub,
+  FaFreeCodeCamp,
+} from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
-import profileImage from '../assets/profile.jpg';
+import profileImage from "../assets/profile.jpg";
+import DownloadResume from './DownloadResume';
 
 const Main = () => {
   return (
@@ -26,12 +34,7 @@ const Main = () => {
           <h2 className="flex sm:text-3xl text-2xl pt-4 text-gray-800">
             I'm a{" "}
             <TypeAnimation
-              sequence={[
-                "Developer",
-                2000,
-                "UI Designer",
-                2000,
-              ]}
+              sequence={["Developer", 2000, "UI Designer", 2000]}
               wrapper="span"
               speed={50}
               style={{ fontSize: "1em", paddingLeft: "5px" }}
@@ -39,11 +42,38 @@ const Main = () => {
             />
           </h2>
           <div className="flex justify-between pt-6 max-w-[200px] w-full">
-            <FaTwitter className="cursor-pointer" size={30} />
-            <FaFacebook className="cursor-pointer" size={30} />
-            <FaInstagram className="cursor-pointer" size={30} />
-            <FaLinkedin className="cursor-pointer" size={30} />
+            <a
+              href="https://github.com/Kentz777"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaGithub className="cursor-pointer" size={30} />
+            </a>
+            <a
+              href="https://www.facebook.com/alexandrethegrape"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaFacebook className="cursor-pointer" size={30} />
+            </a>
+            <a
+              href="https://www.freecodecamp.org/KentOwss_12"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaFreeCodeCamp className="cursor-pointer" size={30} />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/kent-alexandre-ortego-0029122a4/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {" "}
+              <FaLinkedin className="cursor-pointer" size={30} />
+            </a>
+           
           </div>
+          <DownloadResume />
         </div>
       </div>
     </div>
