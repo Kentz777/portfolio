@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { AiOutlineMenu, AiFillProject } from "react-icons/ai";
-import { MdWorkOutline, MdContacts } from "react-icons/md";
+import { MdWorkOutline, MdContacts, MdOutlineSchool } from "react-icons/md";
 import { FaHome } from "react-icons/fa";
 import { GrDocumentUser } from "react-icons/gr";
 
@@ -29,7 +29,7 @@ const Sidenav = () => {
             href="#work"
             className="w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-[pointer hover:scale-110 ease-in duration-200"
           >
-            <MdWorkOutline size={20} />
+            <MdOutlineSchool size={20} />
             <span className="pl-4">Work</span>
           </a>
           <a onClick={handleNav}
