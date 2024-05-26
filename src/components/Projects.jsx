@@ -19,7 +19,7 @@ const Projects = () => {
           title="AgriHub: Center for Urban Culture and Innovation"
           role="Capstone Project - Frontend Developer"
           tech="React, Vite, Typescript, Tailwind"
-          link="https://yourproject1link.com"
+          link="https://agrihub.vercel.app/"
         />
         <ProjectItem
           img={Proj2}
