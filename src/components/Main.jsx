@@ -10,16 +10,17 @@ import {
 import { TypeAnimation } from "react-type-animation";
 import profileImage from "../assets/profile.jpg";
 import DownloadResume from './DownloadResume';
+import AboutMe from "./AboutMe";
 
 const Main = () => {
   return (
     <div id="main" className="">
       <img
         className="w-full h-screen object-cover object-left scale-x-[-1]"
-        src="https://www.wallpapertip.com/wmimgs/160-1606283_web-developer-wallpaper.jpg"
+        src="https://wallpapercave.com/wp/wp2856142.gif"
         alt=""
       />
-      <div className="w-full h-screen absolute top-0 left-0 bg-white/50">
+      <div className="w-full h-screen absolute top-0 left-0 bg-white/40">
         <div className="max-w-[700px] m-auto h-full w-full flex flex-col justify-center lg:items-start items-center">
           <div className="flex flex-col items-center md:flex-row md:items-center">
             <img
@@ -47,21 +48,21 @@ const Main = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaGithub className="cursor-pointer" size={30} />
+              <FaGithub className="cursor-[pointer hover:scale-110 ease-in duration-200" size={30} />
             </a>
             <a
               href="https://www.facebook.com/alexandrethegrape"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaFacebook className="cursor-pointer" size={30} />
+              <FaFacebook className="cursor-[pointer hover:scale-110 ease-in duration-200" size={30} />
             </a>
             <a
               href="https://www.freecodecamp.org/KentOwss_12"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaFreeCodeCamp className="cursor-pointer" size={30} />
+              <FaFreeCodeCamp className="cursor-[pointer hover:scale-110 ease-in duration-200" size={30} />
             </a>
             <a
               href="https://www.linkedin.com/in/kent-alexandre-ortego-0029122a4/"
@@ -69,11 +70,19 @@ const Main = () => {
               rel="noopener noreferrer"
             >
               {" "}
-              <FaLinkedin className="cursor-pointer" size={30} />
+              <FaLinkedin className="cursor-[pointer hover:scale-110 ease-in duration-200" size={30} />
             </a>
            
           </div>
-          <DownloadResume />
+          <div className="flex flex-col md:flex-row mt-4 items-center md:items-start">
+  <div className="w-full md:w-auto mb-2 md:mb-0 md:mr-4 sm:mr-0">
+    <DownloadResume />
+  </div>
+  <div className="w-full md:w-auto sm:mr-0">
+    <AboutMe />
+  </div>
+</div>
+
         </div>
       </div>
     </div>

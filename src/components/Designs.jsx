@@ -29,7 +29,7 @@ const Designs = () => {
         <ProjectItem
           img={Des3}
           title="AgriHub UI"
-          role="Solo UI Designer"
+          role="Collaborative UI Designer"
           tech="Figma"
           link="https://www.figma.com/proto/yDCTRLowBb8B5djrP2Ken9/AGRIHUB-FLOW?node-id=2-56321&starting-point-node-id=2%3A56321"
         />
