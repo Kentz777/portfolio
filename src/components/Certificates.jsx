@@ -1,6 +1,7 @@
 import React from 'react'
 import ProjectItem from './ProjectItem'
 import cert1 from '../assets/cert1.png';
+import cert2 from '../assets/cert2.png';
 
 const Certs = () => {
   return (
@@ -13,9 +14,14 @@ const Certs = () => {
         <ProjectItem
           img={cert1}
           title="Responsive Web Certificate"
-          role="Solo UI Designer"
-          tech="HTML, CSS"
+          date= "May, 2024"
           link="https://www.freecodecamp.org/certification/KentOwss_12/responsive-web-design"
+        />
+         <ProjectItem
+          img={cert2}
+          title="Network Security Issue Prevention"
+          date= "December, 2022"
+          link="https://credsverse.com/credentials/cb16ed2d-1fc2-41a6-9d12-ed24294b6155"
         />
       </div>
     </div>
