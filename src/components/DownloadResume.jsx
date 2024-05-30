@@ -2,7 +2,7 @@ import React from 'react';
 import { FaDownload } from 'react-icons/fa';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import resumePDF from '../assets/cv.pdf';
+import resumePDF from '../assets/my_cv.pdf';
 
 const DownloadResume = () => {
   const handleDownload = () => {
@@ -22,7 +22,7 @@ const DownloadResume = () => {
     <div>
       <button
         onClick={handleDownload}
-        className="relative flex items-center justify-between px-6 py-4 bg-transparent border-2 border-black rounded-full mt-5 text-white font-semibold shadow-lg hover:shadow-xl transition duration-300 overflow-hidden group cursor-pointer hover:scale-110 ease-in duration-200"
+        className="relative flex items-center justify-between px-6 py-4 bg-transparent border-2 border-black rounded-full mt-5 text-white font-semibold shadow-lg hover:shadow-xl transition duration-300 overflow-hidden group cursor-pointer hover:scale-110 ease-in w-full"
       >
         <div className="flex items-center z-10 group-hover:text-black transition duration-300">
           <FaDownload className="mr-2" />
