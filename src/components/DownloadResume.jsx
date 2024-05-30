@@ -2,7 +2,7 @@ import React from 'react';
 import { FaDownload } from 'react-icons/fa';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import resumePDF from '../assets/my_cv.pdf';
+import resumePDF from '../assets/cv_ortego.pdf';
 
 const DownloadResume = () => {
   const handleDownload = () => {
