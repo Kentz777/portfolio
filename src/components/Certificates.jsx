@@ -2,6 +2,7 @@ import React from 'react'
 import ProjectItem from './ProjectItem'
 import cert1 from '../assets/cert1.png';
 import cert2 from '../assets/cert2.png';
+import cert3 from '../assets/cert3.png';
 
 const Certs = () => {
   return (
@@ -22,6 +23,12 @@ const Certs = () => {
           title="Network Security Issue Prevention"
           date= "December, 2022"
           link="https://credsverse.com/credentials/cb16ed2d-1fc2-41a6-9d12-ed24294b6155"
+        />
+         <ProjectItem
+          img={cert3}
+          title="React JS Tutorial"
+          date= "June, 2022"
+          link="https://olympus.mygreatlearning.com/courses/52045/certificate"
         />
       </div>
     </div>
