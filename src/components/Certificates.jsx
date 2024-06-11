@@ -3,6 +3,7 @@ import ProjectItem from './ProjectItem'
 import cert1 from '../assets/cert1.png';
 import cert2 from '../assets/cert2.png';
 import cert3 from '../assets/cert3.png';
+import cert4 from '../assets/cert4.png';
 
 const Certs = () => {
   return (
@@ -29,6 +30,11 @@ const Certs = () => {
           title="React JS Tutorial"
           date= "June, 2022"
           link="https://olympus.mygreatlearning.com/courses/52045/certificate"
+        />
+         <ProjectItem
+          img={cert4}
+          title="Certificate of Completion"
+          date= "March, 2024"
         />
       </div>
     </div>
