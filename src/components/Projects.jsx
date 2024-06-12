@@ -4,7 +4,7 @@ import Proj1 from '../assets/project1.jpg'
 import ProjectItem from './ProjectItem'
 import Proj2 from '../assets/project2.png';
 import Proj3 from '../assets/project3.png';
-import Proj4 from '../assets/project4.png';
+import Proj4 from '../assets/project44.png';
 
 const Projects = () => {
   return (
@@ -28,6 +28,13 @@ const Projects = () => {
           tech="React, NextJS, Typescript"
           link="https://www.homeqube.com/"
         />
+          <ProjectItem
+          img={Proj4}
+          title="React-Vite: Disney Clone App"
+          role="Fullstack Developer"
+          tech="React, Vite, Javascript, Tailwind CSS"
+          link="https://kentdisneyclone.vercel.app/"
+        />
         <ProjectItem
           img={Proj3}
           title="React-Vite: Food Recipe App Using Api"
@@ -35,13 +42,7 @@ const Projects = () => {
           tech="React, Vite, Javascript"
           link="https://food-app-xi-three.vercel.app/"
         />
-        <ProjectItem
-          img={Proj4}
-          title="React-Vite: ToDo App"
-          role="Fullstack Developer"
-          tech="React, Vite, Javascript"
-          link="https://to-do-pi-opal.vercel.app/"
-        />
+      
       </div>
     </div>
   )
