@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaReact, FaCss3Alt } from 'react-icons/fa';
+import { FaReact, FaCss3Alt, FaGithub } from 'react-icons/fa';
 import { SiTypescript } from 'react-icons/si';
 import { AiOutlineJavaScript } from "react-icons/ai";
 import { IoLogoFigma } from "react-icons/io5";
@@ -15,6 +15,7 @@ const Skills = () => {
     { name: 'HTML5', icon: <GrHtml5 size={170} /> , key: 'html' },
     { name: 'CSS3', icon: <FaCss3Alt size={170} /> , key: 'css' },
     { name: 'Tailwind CSS', icon: <RiTailwindCssFill size={170} /> , key: 'tailwind' },
+    { name: 'GitHub', icon: <FaGithub size={170} /> , key: 'github' },
   ];
 
   return (
