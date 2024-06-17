@@ -4,7 +4,7 @@ import EducationItem from "./EducationItem";
 const data = [
   {
     year: "2022-2024",
-    title: "Intern: Junior Front-End Developer",
+    title: "Intern: Junior Fullstack Developer",
     duration: "2 years",
     details: "Intern at Homeqube Pte Ltd",
   }
