@@ -4,6 +4,7 @@ import cert1 from '../assets/cert1.png';
 import cert2 from '../assets/cert2.png';
 import cert3 from '../assets/cert3.png';
 import cert4 from '../assets/cert4.png';
+import cert5 from '../assets/cert5.png';
 
 const Certs = () => {
   return (
@@ -18,6 +19,12 @@ const Certs = () => {
           title="Responsive Web Certificate"
           date= "May, 2024"
           link="https://www.freecodecamp.org/certification/KentOwss_12/responsive-web-design"
+        />
+         <ProjectItem
+          img={cert5}
+          title="JavaScript Algorithnm and Data Structures"
+          date= "June, 2024"
+          link="https://www.freecodecamp.org/certification/KentOwss_12/javascript-algorithms-and-data-structures-v8"
         />
          <ProjectItem
           img={cert2}
@@ -35,7 +42,7 @@ const Certs = () => {
           img={cert4}
           title="Certificate of Completion"
           date= "March, 2024"
-        />
+      />
       </div>
     </div>
   )
