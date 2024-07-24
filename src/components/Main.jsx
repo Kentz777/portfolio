@@ -35,7 +35,7 @@ const Main = () => {
           <h2 className="flex sm:text-3xl text-2xl pt-4 text-gray-800">
             I'm a{" "}
             <TypeAnimation
-              sequence={["Developer", 2000, "UI Designer", 2000]}
+              sequence={["Developer", 2000, "UI/UX Designer", 2000]}
               wrapper="span"
               speed={50}
               style={{ fontSize: "1em", paddingLeft: "5px" }}

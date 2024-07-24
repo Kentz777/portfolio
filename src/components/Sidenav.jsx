@@ -3,7 +3,7 @@ import { AiOutlineMenu, AiFillProject } from "react-icons/ai";
 import { MdWorkOutline, MdContacts, MdOutlineSchool } from "react-icons/md";
 import { FaHome, FaFileDownload } from "react-icons/fa";
 import { GrDocumentUser } from "react-icons/gr";
-import resumePDF from '../assets/CV_ORTEGO.pdf';
+import resumePDF from '../assets/Kent_Ortego_CV.pdf';
 import { RiContactsLine } from "react-icons/ri";
 
 const Sidenav = () => {

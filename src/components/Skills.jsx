@@ -1,10 +1,12 @@
 import React from 'react';
 import { FaReact, FaCss3Alt, FaGithub } from 'react-icons/fa';
-import { SiTypescript, SiPhp, SiMysql } from 'react-icons/si';
+import { SiTypescript, SiPhp, SiMysql, SiNextdotjs, SiVite, SiMongodb, SiExpress } from 'react-icons/si';
 import { AiOutlineJavaScript } from "react-icons/ai";
 import { IoLogoFigma } from "react-icons/io5";
 import { GrHtml5 } from "react-icons/gr";
 import { RiTailwindCssFill } from "react-icons/ri";
+import { TbJson } from "react-icons/tb";
+import { FaNodeJs } from "react-icons/fa6";
 
 const Skills = () => {
   const skills = [
@@ -15,9 +17,15 @@ const Skills = () => {
     { name: 'HTML5', icon: <GrHtml5 size={170} /> , key: 'html' },
     { name: 'CSS3', icon: <FaCss3Alt size={170} /> , key: 'css' },
     { name: 'Tailwind CSS', icon: <RiTailwindCssFill size={170} /> , key: 'tailwind' },
-    { name: 'GitHub', icon: <FaGithub size={170} /> , key: 'github' },
+    { name: 'Git & GitHub', icon: <FaGithub size={170} /> , key: 'github' },
     { name: 'PHP', icon: <SiPhp size={170} /> , key: 'php' },
     { name: 'MySQL', icon: <SiMysql size={170} /> , key: 'mysql' },
+    { name: 'Next', icon: <SiNextdotjs size={170} /> , key: 'NextJS' },
+    { name: 'Vite', icon: <SiVite size={170} /> , key: 'vite' },
+    { name: 'MongoDB', icon: <SiMongodb size={170} /> , key: 'mongodb' },
+    { name: 'NodeJS', icon: <FaNodeJs size={170} /> , key: 'node' },
+    { name: 'Express', icon: <SiExpress size={170} /> , key: 'express' },
+    { name: 'JSON', icon: <TbJson size={170} /> , key: 'json' },
   ];
 
   return (
