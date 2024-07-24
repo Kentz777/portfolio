@@ -3,9 +3,9 @@ import EducationItem from "./EducationItem";
 
 const data = [
   {
-    year: "2022-2024",
+    year: "Sep 2023- Mar 2024",
     title: "Intern: Junior Fullstack Developer",
-    duration: "2 years",
+    duration: "6 months",
     details: "Intern at Homeqube Pte Ltd",
   }
 ];
