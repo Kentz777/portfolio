@@ -1,10 +1,14 @@
 import React from 'react'
 import { MdPersonSearch } from "react-icons/md";
+import profilePDF from '../assets/personality_profile.pdf';
 
 const AboutMe = () => {
-    const handleDownload = () => {
-        return window.confirm("This page is still under construction. Dont worry it may be finished soon. Come visit me again!");
-      };
+  const handleDownload = () => {
+    const isConfirmed = window.confirm("This will direct you to my Personality Profile, click OK to confirm");
+    if (isConfirmed) {
+      window.open(profilePDF, '_blank');
+    }
+  };
   return (
     <button
     onClick={handleDownload}
