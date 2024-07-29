@@ -5,6 +5,7 @@ import ProjectItem from './ProjectItem'
 import Proj2 from '../assets/project2.png';
 import Proj3 from '../assets/project3.png';
 import Proj4 from '../assets/project44.png';
+import Proj5 from '../assets/project5.png';
 
 const Projects = () => {
   return (
@@ -42,7 +43,13 @@ const Projects = () => {
           tech="React, Vite, Javascript"
           link="https://food-app-xi-three.vercel.app/"
         />
-      
+       <ProjectItem
+          img={Proj5}
+          title="NextJS: Saulong Gym"
+          role="Full Stack Developer"
+          tech="React, Next, Typescript"
+          link="https://saulong-gym.vercel.app/"
+        />
       </div>
     </div>
   )
