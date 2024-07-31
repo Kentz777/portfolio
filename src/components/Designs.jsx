@@ -10,12 +10,7 @@ import { motion } from "framer-motion"
 
 const Designs = () => {
   return (
-    <motion.div 
-    initial={{ opacity: 0, y: 50 }} 
-    whileInView={{ opacity: 1, y: 0 }} 
-    transition={{ duration: 1.8, ease: 'easeOut' }}
-    viewport={{ once: false, amount: 0.5 }}
-
+    <div
     id='projects' className='max-w-[1040px] m-auto md:pl-20 p-4 py-16'>
       <h1 className='text-4xl font-bold text-center text-[#001b5e]'>Designs</h1>
       <p className='text-center py-8'>
@@ -65,7 +60,7 @@ const Designs = () => {
           link="https://www.figma.com/proto/1IAvcXS7UxbXHIHo9moXFy/DAO---UX---compiled?node-id=9-2&starting-point-node-id=9%3A2"
         />
       </div>
-    </motion.div>
+    </div>
   )
 }
 

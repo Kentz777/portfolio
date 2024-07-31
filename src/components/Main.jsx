@@ -24,19 +24,27 @@ const Main = () => {
       <div className="w-full h-screen absolute top-0 left-0 bg-white/40">
         <div className="max-w-[700px] m-auto h-full w-full flex flex-col justify-center lg:items-start items-center">
           <motion.div
-          transition={{ duration: 0.8 }}
-                animate={{
-                  scale: [1, 2, 2, 1, 1],
-                  rotate: [0, 0, 270, 270, 0],
-                  borderRadius: ["20%", "20%", "50%", "50%", "20%"],
-                }}
+         animate={{ x: [1000, 0] }} // Move to x:100 and then back to x:0
+         transition={{ 
+           type: "spring", 
+           stiffness: 48 
+          }}
           >
           <div className="flex flex-col items-center md:flex-row md:items-center">
+            <motion.div
+            animate={{
+              scale: [1, 2, 2, 1, 1],
+              rotate: [0, 0, 270, 270, 0],
+              borderRadius: ["20%", "20%", "50%", "50%", "20%"],
+            }}
+            >
             <img
               src={profileImage}
               alt="Profile"
               className="w-20 h-30 rounded-tl-xl rounded-tr-xl rounded-bl-xl mb-4 md:mb-0 md:mr-4"
             />
+            </motion.div>
+            
             <h1 className="sm:text-5xl text-4xl font-bold text-gray-800 text-center md:text-left">
               Hi I'm Kent Ortego
             </h1>
@@ -54,11 +62,10 @@ const Main = () => {
           </h2>
           </motion.div>
           <motion.div
-          transition={{ duration: 1.2 }}
-          animate={{
-            scale: [1, 2, 2, 1, 1],
-            rotate: [0, 0, -270, -270, 0],
-            borderRadius: ["20%", "20%", "50%", "50%", "20%"],
+         animate={{ x: [1000, 0] }} // Move to x:100 and then back to x:0
+         transition={{ 
+           type: "spring", 
+           stiffness: 24 
           }}
           className="flex justify-between pt-6 max-w-[200px] w-full">
             <a
