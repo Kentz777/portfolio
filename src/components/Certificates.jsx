@@ -5,10 +5,16 @@ import cert2 from '../assets/cert2.png';
 import cert3 from '../assets/cert3.png';
 import cert4 from '../assets/cert4.png';
 import cert5 from '../assets/cert5.png';
+import { motion } from "framer-motion"
 
 const Certs = () => {
   return (
-    <div id='projects' className='max-w-[1040px] m-auto md:pl-20 p-4 py-16'>
+    <motion.div
+    initial={{ opacity: 0, y: 50 }} 
+    whileInView={{ opacity: 1, y: 0 }} 
+    transition={{ duration: 1.8, ease: 'easeOut' }}
+    viewport={{ once: false, amount: 0.5 }}
+    id='projects' className='max-w-[1040px] m-auto md:pl-20 p-4 py-16'>
       <h1 className='text-4xl font-bold text-center text-[#001b5e]'>Certificates</h1>
       <p className='text-center py-8'>
       My certificates
@@ -44,7 +50,7 @@ const Certs = () => {
           date= "March, 2024"
       />
       </div>
-    </div>
+    </motion.div>
   )
 }
 

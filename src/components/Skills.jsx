@@ -7,6 +7,7 @@ import { GrHtml5 } from "react-icons/gr";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { TbJson } from "react-icons/tb";
 import { FaNodeJs } from "react-icons/fa6";
+import { motion } from "framer-motion"
 
 const Skills = () => {
   const skills = [
@@ -29,7 +30,12 @@ const Skills = () => {
   ];
 
   return (
-    <div className="max-w-[1040px] mx-auto p-4 py-16">
+    <motion.div 
+    initial={{ opacity: 0, y: 50 }} 
+    whileInView={{ opacity: 1, y: 0 }} 
+    transition={{ duration: 1.8, ease: 'easeOut' }}
+    viewport={{ once: false, amount: 0.5 }}
+    className="max-w-[1040px] mx-auto p-4 py-16">
       <h1 className="text-4xl font-bold text-[#001b5e] text-center mb-8">
         Skills
       </h1>
@@ -44,7 +50,7 @@ const Skills = () => {
           </div>
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 };
 

@@ -11,6 +11,7 @@ import { TypeAnimation } from "react-type-animation";
 import profileImage from "../assets/profile.jpg";
 import DownloadResume from './DownloadResume';
 import AboutMe from "./AboutMe";
+import { motion } from "framer-motion"
 
 const Main = () => {
   return (
@@ -22,6 +23,14 @@ const Main = () => {
       />
       <div className="w-full h-screen absolute top-0 left-0 bg-white/40">
         <div className="max-w-[700px] m-auto h-full w-full flex flex-col justify-center lg:items-start items-center">
+          <motion.div
+          transition={{ duration: 0.8 }}
+                animate={{
+                  scale: [1, 2, 2, 1, 1],
+                  rotate: [0, 0, 270, 270, 0],
+                  borderRadius: ["20%", "20%", "50%", "50%", "20%"],
+                }}
+          >
           <div className="flex flex-col items-center md:flex-row md:items-center">
             <img
               src={profileImage}
@@ -32,6 +41,7 @@ const Main = () => {
               Hi I'm Kent Ortego
             </h1>
           </div>
+
           <h2 className="flex sm:text-3xl text-2xl pt-4 text-gray-800">
             I'm a{" "}
             <TypeAnimation
@@ -42,7 +52,15 @@ const Main = () => {
               repeat={Infinity}
             />
           </h2>
-          <div className="flex justify-between pt-6 max-w-[200px] w-full">
+          </motion.div>
+          <motion.div
+          transition={{ duration: 1.2 }}
+          animate={{
+            scale: [1, 2, 2, 1, 1],
+            rotate: [0, 0, -270, -270, 0],
+            borderRadius: ["20%", "20%", "50%", "50%", "20%"],
+          }}
+          className="flex justify-between pt-6 max-w-[200px] w-full">
             <a
               href="https://github.com/Kentz777"
               target="_blank"
@@ -73,15 +91,21 @@ const Main = () => {
               <FaLinkedin className="cursor-[pointer hover:scale-110 ease-in duration-200" size={30} />
             </a>
            
-          </div>
-          <div className="flex flex-col md:flex-row mt-4 items-center md:items-start">
+          </motion.div>
+          <motion.div
+          animate={{ x: [1000, 0] }} // Move to x:100 and then back to x:0
+          transition={{ 
+            type: "spring", 
+            stiffness: 12 
+          }}
+          className="flex flex-col md:flex-row mt-4 items-center md:items-start">
   <div className="w-full md:w-auto mb-2 md:mb-0 md:mr-4 sm:mr-0">
     <DownloadResume />
   </div>
   <div className="w-full md:w-auto sm:mr-0">
     <AboutMe />
   </div>
-</div>
+</motion.div>
 
         </div>
       </div>

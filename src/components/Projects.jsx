@@ -6,10 +6,17 @@ import Proj2 from '../assets/project2.png';
 import Proj3 from '../assets/project3.png';
 import Proj4 from '../assets/project44.png';
 import Proj5 from '../assets/project5.png';
+import Proj6 from '../assets/project6.png';
+import { motion } from "framer-motion"
 
 const Projects = () => {
   return (
-    <div id='projects' className='max-w-[1040px] m-auto md:pl-20 p-4 py-16'>
+    <motion.div
+    initial={{ opacity: 0, y: 50 }} 
+    whileInView={{ opacity: 1, y: 0 }} 
+    transition={{ duration: 1.8, ease: 'easeOut' }}
+    viewport={{ once: false, amount: 0.5 }}
+    id='projects' className='max-w-[1040px] m-auto md:pl-20 p-4 py-16'>
       <h1 className='text-4xl font-bold text-center text-[#001b5e]'>Projects</h1>
       <p className='text-center py-8'>
       Here are some of my projects. Have a visit.
@@ -50,8 +57,15 @@ const Projects = () => {
           tech="React, Next, Typescript"
           link="https://saulong-gym.vercel.app/"
         />
+        <ProjectItem
+          img={Proj6}
+          title="Bionic Web App"
+          role="Frontend Developer"
+          tech="React, Typescript"
+          link="https://hq-bionic-frontend-react.vercel.app/"
+        />
       </div>
-    </div>
+    </motion.div>
   )
 }
 
