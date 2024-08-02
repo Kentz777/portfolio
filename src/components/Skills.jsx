@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { FaReact, FaCss3Alt, FaGithub } from 'react-icons/fa';
 import { SiTypescript, SiPhp, SiMysql, SiNextdotjs, SiVite, SiMongodb, SiExpress } from 'react-icons/si';
 import { AiOutlineJavaScript } from "react-icons/ai";
@@ -8,6 +8,44 @@ import { RiTailwindCssFill } from "react-icons/ri";
 import { TbJson } from "react-icons/tb";
 import { FaNodeJs } from "react-icons/fa6";
 import { motion } from "framer-motion"
+
+const ResponsiveMotionDiv = ({ children }) => {
+  // State to hold the viewport configuration
+  const [viewportConfig, setViewportConfig] = useState({ once: false, amount: 0.2 });
+
+  // Effect to update viewport configuration based on screen size
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 768) { // Example breakpoint for mobile
+        setViewportConfig({ once: false, amount: 0.08 });
+      } else { // Default or desktop viewport configuration
+        setViewportConfig({ once: false, amount: 0.8 });
+      }
+    };
+
+    // Initial check
+    handleResize();
+
+    // Add resize event listener
+    window.addEventListener('resize', handleResize);
+
+    // Cleanup on component unmount
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1.8, ease: 'easeOut' }}
+      viewport={viewportConfig}
+    >
+      {children}
+    </motion.div>
+  );
+};
 
 const Skills = () => {
   const skills = [
@@ -30,12 +68,8 @@ const Skills = () => {
   ];
 
   return (
-    <motion.div
-    initial={{ opacity: 0, y: 50 }} 
-    whileInView={{ opacity: 1, y: 0 }} 
-    transition={{ duration: 1.8, ease: 'easeOut' }}
-    viewport={{ once: false, amount: 0.02 }}
-    className="max-w-[1040px] mx-auto p-4 py-16">
+    <ResponsiveMotionDiv>
+    <div className="max-w-[1040px] mx-auto p-4 py-16">
       <h1 className="text-4xl font-bold text-[#001b5e] text-center mb-8">
         Skills
       </h1>
@@ -50,7 +84,8 @@ const Skills = () => {
           </div>
         ))}
       </div>
-    </motion.div>
+    </div>
+    </ResponsiveMotionDiv>
   );
 };
 
