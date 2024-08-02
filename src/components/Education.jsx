@@ -33,26 +33,21 @@ const data = [
 
 // ResponsiveMotionDiv component
 const ResponsiveMotionDiv = ({ children }) => {
-  // State to hold the viewport configuration
   const [viewportConfig, setViewportConfig] = useState({ once: false, amount: 0.2 });
 
-  // Effect to update viewport configuration based on screen size
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth < 768) { // Example breakpoint for mobile
+      if (window.innerWidth < 768) { 
         setViewportConfig({ once: false, amount: 0.2 });
-      } else { // Default or desktop viewport configuration
+      } else {
         setViewportConfig({ once: false, amount: 0.8 });
       }
     };
 
-    // Initial check
     handleResize();
 
-    // Add resize event listener
     window.addEventListener('resize', handleResize);
 
-    // Cleanup on component unmount
     return () => {
       window.removeEventListener('resize', handleResize);
     };
@@ -76,13 +71,7 @@ const Education = () => {
     <ResponsiveMotionDiv>
       <div id="work" className="max-w-[1040px] m-auto md:pl-20 py-16">
         <h1 className="text-4xl mb-10 font-bold text-center text-[#001b5e]">
-          <TypeAnimation
-            sequence={["Educational Background", 2000, "Educational Attainment", 2000]}
-            wrapper="span"
-            speed={50}
-            style={{ fontSize: "1em", paddingLeft: "5px" }}
-            repeat={Infinity}
-          />
+         Educational Background
         </h1>
         {data.map((item, id) => (
           <EducationItem key={id} year={item.year} title={item.title} duration={item.duration} details={item.details} />
