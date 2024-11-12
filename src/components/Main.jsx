@@ -18,7 +18,7 @@ const Main = () => {
     <div id="main" className="">
       <img
         className="w-full h-screen object-cover object-left scale-x-[-1]"
-        src="https://ardas-it.com/uploads/images/blogs/giph.gif"
+        src="https://c.tenor.com/GfSX-u7VGM4AAAAC/coding.gif"
         alt=""
       />
       <div className="w-full h-screen absolute top-0 left-0 bg-white/40">

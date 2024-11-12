@@ -1,5 +1,5 @@
 import React from "react";
-import EducationItem from "./EducationItem";
+import WorkItem from "./WorkItem";
 import { motion } from "framer-motion"
 import { TypeAnimation } from "react-type-animation";
 
@@ -8,7 +8,17 @@ const data = [
     year: "Sep 2023- Mar 2024",
     title: "Intern: Junior Fullstack Developer",
     duration: "6 months",
-    details: "Intern at Homeqube Pte Ltd",
+    company: "Homeqube Pte Ltd",
+    url: "https://www.homeqube.com", 
+    responsibility: "Creating UI designs for pages, translating UI to codes and Integrating API endpoints to frontend for both mobile and web version.",
+  },
+  {
+    year: "Aug 2024- Present",
+    title: "Part time: Frontend Mobile Developer",
+    duration: "Present",
+    company: "KDT Network and Data Solution",
+    url: "https://www.kdtdatasolution.com/", 
+    responsibility: "Creating UI designs for screens, translating UI to codes and Integrating API endpoints to frontend.",
   }
 ];
 
@@ -24,7 +34,7 @@ const Work = () => {
      Work Experience
       </h1>
       {data.map((item, id) => (
-        <EducationItem key={id} year={item.year} title={item.title} duration={item.duration} details={item.details}/>
+        <WorkItem key={id} year={item.year} title={item.title} duration={item.duration} company={item.company} url={item.url} responsibility={item.responsibility}/>
       ))}
     </motion.div>
   );
