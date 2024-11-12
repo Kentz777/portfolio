@@ -2,19 +2,19 @@ import React from 'react';
 import { FaDownload } from 'react-icons/fa';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import resumePDF from '../assets/Kent_Ortego_CV.pdf';
+import resumePDF from '../assets/ORTEGO_KENTALEXANDRE_RESUME.pdf';
 
 const DownloadResume = () => {
   const handleDownload = () => {
-    const isConfirmed = window.confirm("Are you sure you want to download the CV? Don't worry, it doesn't contain harmful files. I'm just asking for your confirmation. Click 'OK' if it's fine.");
+    const isConfirmed = window.confirm("Are you sure you want to download the Resume? Don't worry, it doesn't contain harmful files. I'm just asking for your confirmation. Click 'OK' if it's fine.");
     if (isConfirmed) {
       const link = document.createElement('a');
       link.href = resumePDF;
-      link.download = 'Kent_Ortego_CV.pdf';
+      link.download = 'ORTEGO_KENTALEXANDRE_RESUME.pdf';
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
-      toast.success('CV downloaded successfully! Check it in your downloads');
+      toast.success('Resume downloaded successfully! Check it in your downloads');
     }
   };
 

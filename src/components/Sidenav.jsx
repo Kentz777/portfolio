@@ -3,7 +3,7 @@ import { AiOutlineMenu, AiFillProject } from "react-icons/ai";
 import { MdWorkOutline, MdContacts, MdOutlineSchool } from "react-icons/md";
 import { FaHome, FaFileDownload } from "react-icons/fa";
 import { GrDocumentUser } from "react-icons/gr";
-import resumePDF from '../assets/Kent_Ortego_CV.pdf';
+import resumePDF from '../assets/ORTEGO_KENTALEXANDRE_RESUME.pdf';
 import { RiContactsLine } from "react-icons/ri";
 
 const Sidenav = () => {
@@ -14,7 +14,7 @@ const Sidenav = () => {
     if (isConfirmed) {
       const link = document.createElement('a');
       link.href = resumePDF;
-      link.download = 'Kent_Ortego_CV.pdf';
+      link.download = 'ORTEGO_KENTALEXANDRE_RESUME.pdf';
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
