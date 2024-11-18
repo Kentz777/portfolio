@@ -7,6 +7,8 @@ import Proj3 from '../assets/project3.png';
 import Proj4 from '../assets/project44.png';
 import Proj5 from '../assets/project5.png';
 import Proj6 from '../assets/project6.png';
+import Proj7 from '../assets/project7.png';
+import Proj8 from '../assets/project8.png';
 import { motion } from "framer-motion"
 
 const Projects = () => {
@@ -63,6 +65,20 @@ const Projects = () => {
           role="Frontend Developer"
           tech="React, Typescript"
           link="https://hq-bionic-frontend-react.vercel.app/"
+        />
+         <ProjectItem
+          img={Proj7}
+          title="Krah: Pipes Calculation Mobile App"
+          role="Frontend Developer"
+          tech="React-Native, Expo, Typescript"
+          link="https://drive.google.com/file/d/1CfoP_lAzDIj0xYSjaRi0RwPq5QEfzlrO/view?fbclid=IwY2xjawGn6gtleHRuA2FlbQIxMAABHQWe8Ppp8kinUyREXI8NWPwl_fv8EdOUZV-AvcGBfPFoKi87H_BWwSeNzQ_aem_gj6a-H6krLgaG5LzbhK4KA"
+        />
+         <ProjectItem
+          img={Proj8}
+          title="Maverick Solutions: Construction Pro Mobile App"
+          role="Frontend Developer"
+          tech="React-Native, Expo, Typescript"
+          link="https://expo.dev/accounts/ktabong29/projects/constructpro-mobile/builds/2f8dc952-53a4-4116-9200-a31398570934"
         />
       </div>
     </motion.div>

@@ -6,6 +6,8 @@ import Des3 from '../assets/design3.png';
 import Des4 from '../assets/design4.png';
 import Des5 from '../assets/design5.png';
 import Des6 from '../assets/design6.png';
+import Des7 from '../assets/design7.png';
+import Des8 from '../assets/design8.png';
 import { motion } from "framer-motion"
 
 const Designs = () => {
@@ -61,6 +63,20 @@ const Designs = () => {
           role="Collaborative UI/UX Designer"
           tech="Figma"
           link="https://www.figma.com/proto/1IAvcXS7UxbXHIHo9moXFy/DAO---UX---compiled?node-id=9-2&starting-point-node-id=9%3A2"
+        />
+         <ProjectItem
+          img={Des7}
+          title="KRAH: Pipes Calculation Mobile App UI/UX"
+          role="Collaborative UI/UX Designer"
+          tech="Figma"
+          link="https://www.figma.com/design/66BVcU4FHKwf7bPkZAUria/KRAH_Mobile_UI?node-id=0-1&t=UfUY11k11utxZJ1C-1"
+        />
+         <ProjectItem
+          img={Des8}
+          title="Maverick Solutions: Construction Pro Mobile App UI/UX"
+          role="Collaborative UI/UX Designer"
+          tech="Figma"
+          link="https://www.figma.com/design/JkJ44bY3G8LgdyB7N5hqU4/Construct-Pro-Mobile-Design-UI?node-id=661-1615&t=uAR6HOLCSIV0gm9C-1"
         />
       </div>
     </motion.div>

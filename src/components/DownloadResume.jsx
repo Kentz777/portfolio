@@ -26,7 +26,7 @@ const DownloadResume = () => {
       >
         <div className="flex items-center z-10 group-hover:text-black transition duration-300">
           <FaDownload className="mr-2" />
-          <span>Download CV</span>
+          <span>Download Resume</span>
         </div>
         <div className="absolute inset-0 bg-black opacity-50 group-hover:opacity-0 rounded-full transition duration-300"></div>
       </button>
