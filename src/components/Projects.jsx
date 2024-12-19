@@ -78,7 +78,7 @@ const Projects = () => {
           title="Maverick Solutions: Construction Pro Mobile App"
           role="Frontend Developer"
           tech="React-Native, Expo, Typescript"
-          link="https://expo.dev/accounts/ktabong29/projects/constructpro-mobile/builds/2f8dc952-53a4-4116-9200-a31398570934"
+          link="https://drive.google.com/file/d/1-cSWqUMTpnSqLzWprfx82gtcgCAL18Xb/view?usp=sharing"
         />
       </div>
     </motion.div>
